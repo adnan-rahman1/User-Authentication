@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Authentication App</title>
+</head>
+<style>
+    .nav, .container {
+        text-align: center;
+    }
+    ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul li {
+        float: left;
+    }
+    ul li a{
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        color: orange;
+    }
+</style>
+<body>
+    <div class='nav'>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/signin">Sign in</a></li>
+        <li><a href="/signup">Sign up</a></li>
+    </ul>
+    </div>
+    <div class='container'>
+        <%- body %>
+    </div>
+</body>
+</html>
